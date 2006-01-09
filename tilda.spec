@@ -1,4 +1,5 @@
 Summary:	Tilda - a drop-down terminal
+Summary(pl):	Tilda - wyskakuj±cy terminal
 Name:		tilda
 Version:	0.09.1
 Release:	1
@@ -22,6 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is a drop-down terminal.
 
+%description -l pl
+Tilda to wyskakuj±cy terminal.
+
 %prep
 %setup -q
 
@@ -39,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 \
-	localedir=%{_localedir}
+	localedir=%{_datadir}/locale
 
 rm -rf $RPM_BUILD_ROOT%{_datadir}/application-registry
 

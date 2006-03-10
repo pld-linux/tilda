@@ -1,19 +1,20 @@
 Summary:	Tilda - a drop-down terminal
 Summary(pl):	Tilda - wyskakuj±cy terminal
 Name:		tilda
-Version:	0.09.1
+Version:	0.09.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/tilda/%{name}-%{version}.tar.gz
-# Source0-md5:	1e5971447d2e1b3837dfc48edd172c52
+# Source0-md5:	dda956bc0591b4b70486b36045146a69
 URL:		http://tilda.sourceforge.net/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	glib2-devel >= 2.0.0
+BuildRequires:	glib2-devel >= 2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.0.0
 BuildRequires:	intltool
 BuildRequires:	libtool
+BuildRequires:	libconfuse-devel
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	vte-devel >= 0.11.12

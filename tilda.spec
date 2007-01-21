@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README ChangeLog NEWS TODO AUTHORS
+%doc AUTHORS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/tilda.desktop
 %{_pixmapsdir}/tilda.png

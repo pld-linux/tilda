@@ -1,5 +1,5 @@
 Summary:	Tilda - a drop-down terminal
-Summary(pl.UTF-8):   Tilda - wyskakujący terminal
+Summary(pl.UTF-8):	Tilda - wyskakujący terminal
 Name:		tilda
 Version:	0.9.4
 Release:	1

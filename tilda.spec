@@ -1,5 +1,5 @@
 Summary:	Tilda - a drop-down terminal
-Summary(pl):	Tilda - wyskakuj±cy terminal
+Summary(pl.UTF-8):   Tilda - wyskakujÄ…cy terminal
 Name:		tilda
 Version:	0.9.4
 Release:	1
@@ -24,8 +24,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is a drop-down terminal.
 
-%description -l pl
-Tilda to wyskakuj±cy terminal.
+%description -l pl.UTF-8
+Tilda to wyskakujÄ…cy terminal.
 
 %prep
 %setup -q

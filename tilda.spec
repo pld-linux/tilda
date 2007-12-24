@@ -7,7 +7,8 @@ License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/tilda/%{name}-%{version}.tar.gz
 # Source0-md5:	c497f82f180e128a1e6f301c6b2463d9
-Patch0:		%{name}-glade_file.patch
+Patch0:		%{name}-glade.patch
+Patch1:		%{name}-desktop.patch
 URL:		http://tilda.sourceforge.net/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake

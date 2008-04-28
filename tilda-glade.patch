@@ -1,5 +1,5 @@
---- tilda-0.9.5/src/wizard.c~	2007-12-13 01:24:21.000000000 +0100
-+++ tilda-0.9.5/src/wizard.c	2007-12-22 22:36:56.000000000 +0100
+--- tilda-0.9.6/src/wizard.c~	2008-01-24 08:20:26.000000000 +0100
++++ tilda-0.9.6/src/wizard.c	2008-04-28 20:24:12.527098596 +0200
 @@ -67,7 +67,7 @@
      DEBUG_ASSERT (ltw != NULL);
  
@@ -9,14 +9,14 @@
      GtkWidget *wizard_window;
  
      /* Make sure that there isn't already a wizard showing */
---- tilda-0.9.5/Makefile.am~	2007-12-13 01:24:21.000000000 +0100
-+++ tilda-0.9.5/Makefile.am	2007-12-22 22:41:31.000000000 +0100
+--- tilda-0.9.6/Makefile.am~	2008-04-16 08:19:34.000000000 +0200
++++ tilda-0.9.6/Makefile.am	2008-04-28 20:25:07.033037624 +0200
 @@ -21,8 +21,6 @@
  Pixmapsdir = ${datadir}/pixmaps
  Pixmaps_DATA = tilda.png
  
 -data_DATA = tilda.glade
 -
+ EXTRA_DIST = tilda.desktop.in tilda.png tilda.glade
+ 
  tilda.desktop: tilda.desktop.in
- 	sed -e 's|\@BINDIR\@|$(bindir)|' \
- 	    -e 's|\@PIXMAPSDIR\@|$(datadir)/applications|' $< > $@

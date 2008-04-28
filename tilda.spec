@@ -1,12 +1,12 @@
 Summary:	Tilda - a drop-down terminal
 Summary(pl.UTF-8):	Tilda - wyskakujący terminal
 Name:		tilda
-Version:	0.9.5
+Version:	0.9.6
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/tilda/%{name}-%{version}.tar.gz
-# Source0-md5:	c497f82f180e128a1e6f301c6b2463d9
+# Source0-md5:	b44ebe04fdfd312e9ddc5e0ed77f4289
 Patch0:		%{name}-glade.patch
 Patch1:		%{name}-desktop.patch
 URL:		http://tilda.sourceforge.net/
@@ -52,10 +52,12 @@ install -d $RPM_BUILD_ROOT%{_datadir}/%{name}
 rm -rf $RPM_BUILD_ROOT%{_datadir}/application-registry
 install tilda.glade $RPM_BUILD_ROOT%{_datadir}/%{name}
 
+%find_lang %{name} --all-name
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/*

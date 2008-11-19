@@ -17,6 +17,7 @@ BuildRequires:	gtk+2-devel >= 2:2.0.0
 BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	libconfuse-devel
+BuildRequires:	libglade2-devel
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	vte-devel >= 0.11.12

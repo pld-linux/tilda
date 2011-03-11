@@ -5,19 +5,19 @@ Version:	0.9.6
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/tilda/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/tilda/%{name}-%{version}.tar.gz
 # Source0-md5:	b44ebe04fdfd312e9ddc5e0ed77f4289
 Patch0:		%{name}-glade.patch
 Patch1:		%{name}-desktop.patch
-URL:		http://tilda.sourceforge.net/
+URL:		http://freshmeat.net/projects/tilda/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	glib2-devel >= 2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.0.0
 BuildRequires:	intltool
-BuildRequires:	libtool
 BuildRequires:	libconfuse-devel
 BuildRequires:	libglade2-devel
+BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	vte-devel >= 0.11.12
